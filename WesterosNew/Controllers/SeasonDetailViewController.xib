@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeasonDetailViewController" customModule="WesterosNew" customModuleProvider="target">
+            <connections>
+                <outlet property="episodeLabel" destination="7qR-XW-MMa" id="13V-X8-Tar"/>
+                <outlet property="nameLabel" destination="nb3-xc-pkz" id="S8B-72-a2z"/>
+                <outlet property="releaseDateLabel" destination="P1g-5S-dbu" id="eo9-JL-u4K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb3-xc-pkz">
+                    <rect key="frame" x="16" y="90" width="343" height="21"/>
+                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="21"/>
+                    <color key="textColor" red="0.58341925760000002" green="0.2538482447" blue="0.062202089320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1g-5S-dbu">
+                    <rect key="frame" x="16" y="123" width="343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Episode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qR-XW-MMa">
+                    <rect key="frame" x="16" y="181" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.58341925760000002" green="0.2538482447" blue="0.062202089320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERH-nH-TUP">
+                    <rect key="frame" x="133" y="227" width="109" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Check Episode">
+                        <color key="titleColor" red="1" green="0.11957620619999999" blue="0.092107143119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="checkLabel:" destination="-1" eventType="touchUpInside" id="ugz-Ct-XZh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nb3-xc-pkz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3qw-41-pVz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nb3-xc-pkz" secondAttribute="trailing" constant="16" id="504-E8-EPp"/>
+                <constraint firstItem="P1g-5S-dbu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Df3-C1-SKl"/>
+                <constraint firstItem="ERH-nH-TUP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="133" id="FKI-td-HS2"/>
+                <constraint firstItem="nb3-xc-pkz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HHO-TP-Zwi"/>
+                <constraint firstItem="7qR-XW-MMa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="I59-iK-NYB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P1g-5S-dbu" secondAttribute="trailing" constant="16" id="I8x-BQ-P1y"/>
+                <constraint firstItem="nb3-xc-pkz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="II2-rj-85F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ERH-nH-TUP" secondAttribute="trailing" constant="133" id="MJg-mG-TKQ"/>
+                <constraint firstItem="P1g-5S-dbu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SHT-t1-0zU"/>
+                <constraint firstItem="7qR-XW-MMa" firstAttribute="top" secondItem="P1g-5S-dbu" secondAttribute="bottom" constant="40" id="WsO-8L-4Ir"/>
+                <constraint firstItem="7qR-XW-MMa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aTV-Ue-uBk"/>
+                <constraint firstItem="ERH-nH-TUP" firstAttribute="top" secondItem="7qR-XW-MMa" secondAttribute="bottom" constant="25" id="ivG-ik-Dwa"/>
+                <constraint firstItem="ERH-nH-TUP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="v44-OY-eEk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7qR-XW-MMa" secondAttribute="trailing" constant="16" id="wCX-GP-hpS"/>
+                <constraint firstItem="P1g-5S-dbu" firstAttribute="top" secondItem="nb3-xc-pkz" secondAttribute="bottom" constant="12" id="yBU-fl-7zk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="128.18590704647679"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HouseDetailViewController" customModule="WesterosNew" customModuleProvider="target">
+            <connections>
+                <outlet property="houseLabel" destination="NCr-mp-6Ix" id="lMK-3f-3jK"/>
+                <outlet property="sigilImageView" destination="12r-PO-svy" id="3lC-6I-WM4"/>
+                <outlet property="view" destination="EY0-RC-Vw4" id="jAz-ZU-4PX"/>
+                <outlet property="wordsLabel" destination="HoR-76-nS9" id="8qg-6K-Ymi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EY0-RC-Vw4">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12r-PO-svy">
+                    <rect key="frame" x="44" y="164" width="287" height="339"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="houseLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCr-mp-6Ix">
+                    <rect key="frame" x="118" y="85" width="139" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="dTP-mK-FeG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                    <color key="textColor" red="0.5834192576142132" green="0.25384824474024831" blue="0.062202089320964105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoR-76-nS9">
+                    <rect key="frame" x="167.5" y="542" width="40.5" height="20"/>
+                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="12r-PO-svy" firstAttribute="leading" secondItem="dRj-tf-yCU" secondAttribute="leading" constant="44" id="1ca-3y-Otp"/>
+                <constraint firstItem="HoR-76-nS9" firstAttribute="top" secondItem="12r-PO-svy" secondAttribute="bottom" constant="39" id="3cL-P9-zZU"/>
+                <constraint firstItem="HoR-76-nS9" firstAttribute="centerX" secondItem="EY0-RC-Vw4" secondAttribute="centerX" id="G8F-l7-qDr"/>
+                <constraint firstItem="NCr-mp-6Ix" firstAttribute="top" secondItem="dRj-tf-yCU" secondAttribute="top" constant="65" id="GMK-bb-q6W"/>
+                <constraint firstItem="12r-PO-svy" firstAttribute="top" secondItem="NCr-mp-6Ix" secondAttribute="bottom" constant="50" id="Gpg-Uo-xBd"/>
+                <constraint firstItem="NCr-mp-6Ix" firstAttribute="centerX" secondItem="EY0-RC-Vw4" secondAttribute="centerX" id="XaZ-Ai-xvg"/>
+                <constraint firstItem="dRj-tf-yCU" firstAttribute="trailing" secondItem="12r-PO-svy" secondAttribute="trailing" constant="44" id="uso-uW-ZT8"/>
+                <constraint firstItem="12r-PO-svy" firstAttribute="centerY" secondItem="EY0-RC-Vw4" secondAttribute="centerY" id="vEz-nU-Apj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="dRj-tf-yCU"/>
+            <point key="canvasLocation" x="836" y="-277"/>
+        </view>
+    </objects>
+</document>
